@@ -13,10 +13,10 @@ void setup() {
 void loop() {
 
   int Fire = digitalRead(3); //define Fire as read pin 3
-  int Up = digitalRead(4); //define Up as read pin 4
-  int Down = digitalRead(5); //define Down as read pin 5
-  int Right = digitalRead(6); //define Right as read pin 6
-  int Left = digitalRead(7); //define Left as read pin 7
+  int Left = digitalRead(4); //define Up as read pin 4
+  int Right = digitalRead(5); //define Down as read pin 5
+  int Up = digitalRead(6); //define Right as read pin 6
+  int Down = digitalRead(7); //define Left as read pin 7
 
   if (Fire == LOW)
   {
@@ -24,7 +24,7 @@ void loop() {
   }
   if (Fire == HIGH)
   {
-    Serial.println(" not fired");
+//    Serial.println(" not fired");
   }
   if (Up == LOW){
     Serial.println(" up");
