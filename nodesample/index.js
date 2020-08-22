@@ -1,4 +1,3 @@
-
 let five = require('johnny-five');
 let board = new five.Board({ port: "COM4" }); // needed to specify port here for some reason
 
