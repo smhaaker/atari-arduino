@@ -1,4 +1,3 @@
-
 let five = require('johnny-five');
 let board = new five.Board({ port: "COM4" }); // needed to specify port here for some reason
 
@@ -8,10 +7,10 @@ board.on('ready', function () {
 
   // Define buttons, not as collection since we might want to change holdtime
   let button = new five.Button({ pin: 3, isPullup: true, holdtime: 100,})
-  let up = new five.Button({ pin: 6, isPullup: true })
-  let down = new five.Button({ pin: 7, isPullup: true })
-  let left = new five.Button({ pin: 4, isPullup: true })
-  let right = new five.Button({ pin: 5, isPullup: true })
+  let up = new five.Button({ pin: 4, isPullup: true })
+  let down = new five.Button({ pin: 5, isPullup: true })
+  let left = new five.Button({ pin: 7, isPullup: true })
+  let right = new five.Button({ pin: 6, isPullup: true })
 
   button.on('down', function () { message('FIRE')})
   button.on('hold', function () { message('hold')})
